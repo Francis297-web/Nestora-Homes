@@ -1,1 +1,46 @@
+/* ===== responsive.css - Nestora Responsive Styles ===== */
 
+/* Mobile hero text */
+@media (max-width: 576px) {
+  .hero h1 {
+    font-size: 2.1rem;
+  }
+  
+  .hero {
+    padding-top: 100px;
+    min-height: 90vh;
+  }
+  
+  .glass {
+    padding: 1rem !important;
+  }
+}
+
+/* Tablet adjustments */
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 2.5rem;
+  }
+  
+  .location-card img {
+    height: 220px;
+  }
+}
+
+/* Small desktop */
+@media (max-width: 992px) {
+  .navbar-glass .navbar-collapse {
+    background: rgba(8,15,28,0.95);
+    backdrop-filter: blur(14px);
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+}
