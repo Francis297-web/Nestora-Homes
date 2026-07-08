@@ -1,20 +1,83 @@
  @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-    :root{ --nestora-primary:#0d6efd; --nestora-dark:#0b1220; }
-    .glass { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); background: rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.2); }
-    .navbar-glass { background: rgba(8,15,28,0.25); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid rgba(255,255,255,0.08); }
-    .hero { min-height: 100vh; background: linear-gradient(180deg, rgba(5,12,23,0.82) 0%, rgba(5,12,23,0.6) 60%, rgba(5,12,23,0.85) 100%), url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2940&auto=format&fit=crop') center/cover no-repeat; display:flex; align-items:center; padding-top: 88px; }
-    .rounded-4 { border-radius: 1.25rem !important; }
-    .property-card, .category-card, .location-card { transition: transform .3s ease, box-shadow .3s ease; }
-    .property-card:hover, .category-card:hover { transform: translateY(-6px); box-shadow: 0 1.25rem 2rem rgba(0,0,0,.12)!important; }
-    .location-card img { height: 280px; object-fit: cover; transition: transform .6s ease; }
-    .location-card:hover img { transform: scale(1.06); }
-    .icon-circle { width: 56px; height: 56px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; background: rgba(13,110,253,0.1); color: var(--nestora-primary); }
-    .luxury-section { background: #0b1220; }
-    .badge-premium { background: linear-gradient(90deg,#d4af37,#f9e076); color:#1a1a1a; font-weight:600; }
-    .testimonial-img { width:64px; height:64px; object-fit:cover; }
-    .agent-img { width:120px; height:120px; object-fit:cover; }
-    .form-control, .form-select { border-radius: .75rem; }
-    .btn { border-radius: 50rem; }
-    footer a { text-decoration: none; }
-    @media (max-width: 576px) { .hero h1{ font-size:2.1rem; } }
+   /* ===== styles.css - Nestora Main Styles ===== */
+:root {
+  --nestora-primary: #0d6efd;
+  --nestora-dark: #0b1220;
+}
+
+/* Glass effects */
+.glass {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.navbar-glass {
+  background: rgba(8,15,28,0.25);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+/* Hero section */
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(180deg, rgba(5,12,23,0.82) 0%, rgba(5,12,23,0.6) 60%, rgba(5,12,23,0.85) 100%), 
+              url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2940&auto=format&fit=crop') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  padding-top: 88px;
+}
+
+/* Custom utilities */
+.rounded-4 {
+  border-radius: 1.25rem !important;
+}
+
+.icon-circle {
+  width: 56px;
+  height: 56px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(13,110,253,0.1);
+  color: var(--nestora-primary);
+}
+
+.luxury-section {
+  background: #0b1220;
+}
+
+.badge-premium {
+  background: linear-gradient(90deg,#d4af37,#f9e076);
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.testimonial-img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+}
+
+.agent-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+/* Form styling */
+.form-control, .form-select {
+  border-radius: .75rem;
+}
+
+.btn {
+  border-radius: 50rem;
+}
+
+footer a {
+  text-decoration: none;
+}
   
