@@ -1,1 +1,736 @@
+<!DOCTYPE html>
+<html lang="en-KE">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nestora — Find Premium Homes & Luxury Properties in Kenya</title>
+  <meta name="description" content="Nestora is Kenya's premium real estate platform for buying, selling, and renting verified homes, apartments, villas, townhouses, and commercial properties in Nairobi, Mombasa, Kisumu, Nakuru and across Kenya.">
+  <meta name="keywords" content="real estate Kenya, houses for sale Nairobi, apartments to rent Kenya, luxury villas Mombasa, land for sale, Nestora, property for rent, commercial property Kenya, Kilimani, Karen, Westlands">
+  <meta name="author" content="Nestora">
+  <link rel="canonical" href="https://nestora.co.ke/">
 
+  <!-- Open Graph -->
+  <meta property="og:title" content="Nestora — Find Premium Homes & Luxury Properties in Kenya">
+  <meta property="og:description" content="Discover verified luxury homes, apartments, and commercial properties across Kenya with Nestora's expert agents.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nestora.co.ke/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop">
+  <meta property="og:locale" content="en_KE">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nestora — Find Premium Homes & Luxury Properties in Kenya">
+  <meta name="twitter:description" content="Discover verified luxury homes, apartments, and commercial properties across Kenya with Nestora's expert agents.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  
+ 
+</head>
+<body>
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-glass py-3">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-4" href="#home">
+        <i class="bi bi-house-door-fill me-2 text-primary"></i>Nestora
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#listings">Listings</a></li>
+          <li class="nav-item"><a class="nav-link" href="#categories">Categories</a></li>
+          <li class="nav-item"><a class="nav-link" href="#agents">Agents</a></li>
+          <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <div class="d-flex gap-2 mt-3 mt-lg-0">
+          <a href="#" class="btn btn-outline-light px-3">Sign In</a>
+          <a href="#" class="btn btn-primary px-3">List Property</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <header id="home" class="hero">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-10">
+          <div class="text-center text-lg-start mb-4">
+            <span class="badge bg-white text-dark rounded-pill px-3 py-2 mb-3"><i class="bi bi-shield-check me-1 text-primary"></i> Verified Listings Across Kenya</span>
+            <h1 class="display-4 fw-bold text-white lh-1 mb-3">Find Your Dream Home with Nestora</h1>
+            <p class="lead text-white-50 mb-4 col-lg-8">Kenya's premium platform for luxury homes, modern apartments, beachfront villas, and prime commercial spaces. Search smart, buy with confidence.</p>
+          </div>
+          <div class="glass p-3 p-md-4 rounded-4 shadow-lg">
+            <form class="row g-2 g-lg-3 align-items-end">
+              <div class="col-12 col-md-6 col-lg-3">
+                <label class="form-label text-white-50 small mb-1">Location</label>
+                <div class="input-group">
+                  <span class="input-group-text bg-white border-0"><i class="bi bi-geo-alt"></i></span>
+                  <input type="text" class="form-control border-0" placeholder="Nairobi, Mombasa..." aria-label="Location">
+                </div>
+              </div>
+              <div class="col-6 col-md-6 col-lg-2">
+                <label class="form-label text-white-50 small mb-1">Property Type</label>
+                <select class="form-select">
+                  <option selected>Any Type</option>
+                  <option>Apartment</option>
+                  <option>Villa</option>
+                  <option>Townhouse</option>
+                  <option>Commercial</option>
+                  <option>Land</option>
+                </select>
+              </div>
+              <div class="col-6 col-md-6 col-lg-2">
+                <label class="form-label text-white-50 small mb-1">Price Range</label>
+                <select class="form-select">
+                  <option selected>Any Price</option>
+                  <option>Under KES 5M</option>
+                  <option>KES 5M - 10M</option>
+                  <option>KES 10M - 20M</option>
+                  <option>KES 20M - 50M</option>
+                  <option>KES 50M+</option>
+                </select>
+              </div>
+              <div class="col-6 col-md-3 col-lg-2">
+                <label class="form-label text-white-50 small mb-1">Beds</label>
+                <select class="form-select">
+                  <option selected>Any</option>
+                  <option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option>
+                </select>
+              </div>
+              <div class="col-6 col-md-3 col-lg-1">
+                <label class="form-label text-white-50 small mb-1">Baths</label>
+                <select class="form-select">
+                  <option selected>Any</option>
+                  <option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option>
+                </select>
+              </div>
+              <div class="col-12 col-lg-2">
+                <button type="submit" class="btn btn-primary w-100 py-2 fw-semibold"><i class="bi bi-search me-2"></i>Search</button>
+              </div>
+            </form>
+          </div>
+          <div class="d-flex flex-wrap gap-3 mt-4 text-white-50 small">
+            <span><i class="bi bi-check-circle-fill text-success me-1"></i> 12,450+ Verified Listings</span>
+            <span><i class="bi bi-check-circle-fill text-success me-1"></i> 340+ Expert Agents</span>
+            <span><i class="bi bi-check-circle-fill text-success me-1"></i> Virtual Tours Available</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== FEATURED PROPERTIES ===== -->
+    <section id="listings" class="py-5 py-lg-6">
+      <div class="container py-4">
+        <div class="d-flex justify-content-between align-items-end mb-4">
+          <div>
+            <h2 class="fw-bold mb-1">Featured Properties</h2>
+            <p class="text-muted mb-0">Handpicked premium homes across Kenya</p>
+          </div>
+          <a href="#" class="btn btn-outline-primary d-none d-md-inline-flex">View All</a>
+        </div>
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-md-6 col-lg-4">
+            <article class="card property-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+              <div class="position-relative">
+                <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?q=80&w=1170&auto=format&fit=crop" class="w-100" alt="Modern villa in Karen Nairobi" style="height:240px;object-fit:cover;">
+                <span class="badge bg-success position-absolute top-0 start-0 m-3">For Sale</span>
+              </div>
+              <div class="card-body p-4">
+                <div class="d-flex justify-content-between align-items-start mb-2">
+                  <h5 class="fw-bold mb-0">KES 85,000,000</h5>
+                  <i class="bi bi-heart text-muted"></i>
+                </div>
+                <h6 class="mb-1">Modern Villa in Karen</h6>
+                <p class="text-muted small mb-3"><i class="bi bi-geo-alt me-1"></i>Karen, Nairobi</p>
+                <div class="d-flex gap-3 small text-muted border-top pt-3">
+                  <span><i class="bi bi-bed me-1"></i>5 Beds</span>
+                  <span><i class="bi bi-droplet me-1"></i>6 Baths</span>
+                  <span><i class="bi bi-rulers me-1"></i>6,200 sqft</span>
+                </div>
+              </div>
+              <div class="card-footer bg-white border-0 px-4 pb-4">
+                <a href="#" class="text-primary fw-semibold small">View Details <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-md-6 col-lg-4">
+            <article class="card property-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+              <div class="position-relative">
+                <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1080&auto=format&fit=crop" class="w-100" alt="Luxury apartment in Kilimani" style="height:240px;object-fit:cover;">
+                <span class="badge bg-success position-absolute top-0 start-0 m-3">For Sale</span>
+              </div>
+              <div class="card-body p-4">
+                <div class="d-flex justify-content-between mb-2">
+                  <h5 class="fw-bold mb-0">KES 32,500,000</h5>
+                  <i class="bi bi-heart text-muted"></i>
+                </div>
+                <h6 class="mb-1">Luxury Apartment Kilimani</h6>
+                <p class="text-muted small mb-3"><i class="bi bi-geo-alt me-1"></i>Kilimani, Nairobi</p>
+                <div class="d-flex gap-3 small text-muted border-top pt-3">
+                  <span><i class="bi bi-bed me-1"></i>3 Beds</span>
+                  <span><i class="bi bi-droplet me-1"></i>3 Baths</span>
+                  <span><i class="bi bi-rulers me-1"></i>2,150 sqft</span>
+                </div>
+              </div>
+              <div class="card-footer bg-white border-0 px-4 pb-4">
+                <a href="#" class="text-primary fw-semibold small">View Details <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-md-6 col-lg-4">
+            <article class="card property-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+              <div class="position-relative">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1170&auto=format&fit=crop" class="w-100" alt="Beachfront villa in Nyali Mombasa" style="height:240px;object-fit:cover;">
+                <span class="badge bg-primary position-absolute top-0 start-0 m-3">For Rent</span>
+              </div>
+              <div class="card-body p-4">
+                <div class="d-flex justify-content-between mb-2">
+                  <h5 class="fw-bold mb-0">KES 450,000 <span class="fs-6 fw-normal text-muted">/mo</span></h5>
+                  <i class="bi bi-heart text-muted"></i>
+                </div>
+                <h6 class="mb-1">Beachfront Villa Nyali</h6>
+                <p class="text-muted small mb-3"><i class="bi bi-geo-alt me-1"></i>Nyali, Mombasa</p>
+                <div class="d-flex gap-3 small text-muted border-top pt-3">
+                  <span><i class="bi bi-bed me-1"></i>4 Beds</span>
+                  <span><i class="bi bi-droplet me-1"></i>4 Baths</span>
+                  <span><i class="bi bi-rulers me-1"></i>4,800 sqft</span>
+                </div>
+              </div>
+              <div class="card-footer bg-white border-0 px-4 pb-4">
+                <a href="#" class="text-primary fw-semibold small">View Details <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+          <!-- Card 4 -->
+          <div class="col-md-6 col-lg-4">
+            <article class="card property-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+              <div class="position-relative">
+                <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?q=80&w=1170&auto=format&fit=crop" class="w-100" alt="Executive townhouse Westlands" style="height:240px;object-fit:cover;">
+                <span class="badge bg-primary position-absolute top-0 start-0 m-3">For Rent</span>
+              </div>
+              <div class="card-body p-4">
+                <div class="d-flex justify-content-between mb-2">
+                  <h5 class="fw-bold mb-0">KES 280,000 <span class="fs-6 fw-normal text-muted">/mo</span></h5>
+                  <i class="bi bi-heart text-muted"></i>
+                </div>
+                <h6 class="mb-1">Executive Townhouse</h6>
+                <p class="text-muted small mb-3"><i class="bi bi-geo-alt me-1"></i>Westlands, Nairobi</p>
+                <div class="d-flex gap-3 small text-muted border-top pt-3">
+                  <span><i class="bi bi-bed me-1"></i>3 Beds</span>
+                  <span><i class="bi bi-droplet me-1"></i>3 Baths</span>
+                  <span><i class="bi bi-rulers me-1"></i>2,800 sqft</span>
+                </div>
+              </div>
+              <div class="card-footer bg-white border-0 px-4 pb-4">
+                <a href="#" class="text-primary fw-semibold small">View Details <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+          <!-- Card 5 -->
+          <div class="col-md-6 col-lg-4">
+            <article class="card property-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+              <div class="position-relative">
+                <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=1170&auto=format&fit=crop" class="w-100" alt="Penthouse Lavington" style="height:240px;object-fit:cover;">
+                <span class="badge bg-success position-absolute top-0 start-0 m-3">For Sale</span>
+              </div>
+              <div class="card-body p-4">
+                <div class="d-flex justify-content-between mb-2">
+                  <h5 class="fw-bold mb-0">KES 45,000,000</h5>
+                  <i class="bi bi-heart text-muted"></i>
+                </div>
+                <h6 class="mb-1">Penthouse in Lavington</h6>
+                <p class="text-muted small mb-3"><i class="bi bi-geo-alt me-1"></i>Lavington, Nairobi</p>
+                <div class="d-flex gap-3 small text-muted border-top pt-3">
+                  <span><i class="bi bi-bed me-1"></i>4 Beds</span>
+                  <span><i class="bi bi-droplet me-1"></i>4 Baths</span>
+                  <span><i class="bi bi-rulers me-1"></i>3,400 sqft</span>
+                </div>
+              </div>
+              <div class="card-footer bg-white border-0 px-4 pb-4">
+                <a href="#" class="text-primary fw-semibold small">View Details <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+          <!-- Card 6 -->
+          <div class="col-md-6 col-lg-4">
+            <article class="card property-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+              <div class="position-relative">
+                <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=1084&auto=format&fit=crop" class="w-100" alt="Family home Runda" style="height:240px;object-fit:cover;">
+                <span class="badge bg-success position-absolute top-0 start-0 m-3">For Sale</span>
+              </div>
+              <div class="card-body p-4">
+                <div class="d-flex justify-content-between mb-2">
+                  <h5 class="fw-bold mb-0">KES 68,000,000</h5>
+                  <i class="bi bi-heart text-muted"></i>
+                </div>
+                <h6 class="mb-1">Family Home Runda</h6>
+                <p class="text-muted small mb-3"><i class="bi bi-geo-alt me-1"></i>Runda, Nairobi</p>
+                <div class="d-flex gap-3 small text-muted border-top pt-3">
+                  <span><i class="bi bi-bed me-1"></i>5 Beds</span>
+                  <span><i class="bi bi-droplet me-1"></i>5 Baths</span>
+                  <span><i class="bi bi-rulers me-1"></i>5,500 sqft</span>
+                </div>
+              </div>
+              <div class="card-footer bg-white border-0 px-4 pb-4">
+                <a href="#" class="text-primary fw-semibold small">View Details <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROPERTY CATEGORIES ===== -->
+    <section id="categories" class="py-5 bg-light">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Browse by Category</h2>
+          <p class="text-muted">Find the perfect property type for your lifestyle</p>
+        </div>
+        <div class="row g-4 row-cols-2 row-cols-md-3 row-cols-lg-5">
+          <div class="col">
+            <div class="category-card bg-white p-4 rounded-4 shadow-sm text-center h-100">
+              <i class="bi bi-buildings fs-1 text-primary"></i>
+              <h6 class="mt-3 mb-1 fw-semibold">Apartments</h6>
+              <p class="small text-muted mb-0">2,410 listings</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="category-card bg-white p-4 rounded-4 shadow-sm text-center h-100">
+              <i class="bi bi-house-heart fs-1 text-primary"></i>
+              <h6 class="mt-3 mb-1 fw-semibold">Villas</h6>
+              <p class="small text-muted mb-0">1,150 listings</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="category-card bg-white p-4 rounded-4 shadow-sm text-center h-100">
+              <i class="bi bi-shop fs-1 text-primary"></i>
+              <h6 class="mt-3 mb-1 fw-semibold">Commercial</h6>
+              <p class="small text-muted mb-0">840 listings</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="category-card bg-white p-4 rounded-4 shadow-sm text-center h-100">
+              <i class="bi bi-gem fs-1 text-primary"></i>
+              <h6 class="mt-3 mb-1 fw-semibold">Luxury Homes</h6>
+              <p class="small text-muted mb-0">620 listings</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="category-card bg-white p-4 rounded-4 shadow-sm text-center h-100">
+              <i class="bi bi-map fs-1 text-primary"></i>
+              <h6 class="mt-3 mb-1 fw-semibold">Land Plots</h6>
+              <p class="small text-muted mb-0">3,290 listings</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WHY CHOOSE NESTORA ===== -->
+    <section class="py-5">
+      <div class="container py-4">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5">
+            <h2 class="fw-bold mb-3">Why Choose Nestora</h2>
+            <p class="text-muted mb-4">We combine local expertise with premium technology to make buying, selling and renting in Kenya transparent, fast, and secure.</p>
+            <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498b?q=80&w=1170&auto=format&fit=crop" class="img-fluid rounded-4 shadow" alt="Modern Kenyan home interior">
+          </div>
+          <div class="col-lg-7">
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="p-4 h-100">
+                  <div class="icon-circle mb-3"><i class="bi bi-patch-check-fill fs-4"></i></div>
+                  <h6 class="fw-semibold">Verified Listings</h6>
+                  <p class="small text-muted mb-0">Every property is physically verified by our agents across Nairobi, Mombasa, and major towns.</p>
+                </div>
+              <div class="col-md-6">
+                <div class="p-4 h-100">
+                  <div class="icon-circle mb-3"><i class="bi bi-people-fill fs-4"></i></div>
+                  <h6 class="fw-semibold">Expert Agents</h6>
+                  <p class="small text-muted mb-0">Work with top-rated Kenyan agents who know market prices, legal checks, and neighborhoods.</p>
+                </div>
+              <div class="col-md-6">
+                <div class="p-4 h-100">
+                  <div class="icon-circle mb-3"><i class="bi bi-camera-video-fill fs-4"></i></div>
+                  <h6 class="fw-semibold">Virtual Tours</h6>
+                  <p class="small text-muted mb-0">Tour homes in 3D from anywhere. Save time with immersive video walkthroughs.</p>
+                </div>
+              <div class="col-md-6">
+                <div class="p-4 h-100">
+                  <div class="icon-circle mb-3"><i class="bi bi-lock-fill fs-4"></i></div>
+                  <h6 class="fw-semibold">Secure Transactions</h6>
+                  <p class="small text-muted mb-0">Escrow support, lawyer-vetted documents, and M-Pesa integration for deposits.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== LUXURY LISTINGS ===== -->
+    <section class="luxury-section py-5 text-white">
+      <div class="container py-4">
+        <div class="d-flex justify-content-between align-items-end mb-4">
+          <div>
+            <h2 class="fw-bold mb-1">Luxury Collection</h2>
+            <p class="text-white-50 mb-0">Exclusive properties for discerning buyers</p>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="card bg-transparent border-0 text-white">
+              <div class="position-relative rounded-4 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1613977257592-4871e5fcd7c4?q=80&w=1170&auto=format&fit=crop" class="w-100" alt="Karen mansion" style="height:320px;object-fit:cover;">
+                <span class="badge badge-premium position-absolute top-0 end-0 m-3">Premium</span>
+              </div>
+              <div class="pt-3">
+                <h5 class="fw-bold">KES 185,000,000</h5>
+                <p class="mb-1">7-Bed Mansion, Karen</p>
+                <p class="small text-white-50">Private pool, cinema, staff quarters</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card bg-transparent border-0 text-white">
+              <div class="position-relative rounded-4 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1170&auto=format&fit=crop" class="w-100" alt="Diani beach house" style="height:320px;object-fit:cover;">
+                <span class="badge badge-premium position-absolute top-0 end-0 m-3">Premium</span>
+              </div>
+              <div class="pt-3">
+                <h5 class="fw-bold">KES 240,000,000</h5>
+                <p class="mb-1">Oceanfront Estate, Diani</p>
+                <p class="small text-white-50">Direct beach access, 6 suites</p>
+              </div>
+            </div>
+          <div class="col-lg-4">
+            <div class="card bg-transparent border-0 text-white">
+              <div class="position-relative rounded-4 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1170&auto=format&fit=crop" class="w-100" alt="Muthaiga residence" style="height:320px;object-fit:cover;">
+                <span class="badge badge-premium position-absolute top-0 end-0 m-3">Premium</span>
+              </div>
+              <div class="pt-3">
+                <h5 class="fw-bold">KES 150,000,000</h5>
+                <p class="mb-1">Classic Residence, Muthaiga</p>
+                <p class="small text-white-50">Mature gardens, 2-acre plot</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FEATURED LOCATIONS ===== -->
+    <section id="locations" class="py-5">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Explore Top Locations</h2>
+          <p class="text-muted">Popular areas where Kenyans are buying and renting</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="location-card position-relative rounded-4 overflow-hidden shadow-sm">
+              <img src="https://images.unsplash.com/photo-1611348524140-55c005b4e911?q=80&w=1080&auto=format&fit=crop" alt="Nairobi skyline" class="w-100">
+              <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+                <h5 class="text-white mb-0">Nairobi</h5>
+                <small class="text-white-50">3,240 properties</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="location-card position-relative rounded-4 overflow-hidden shadow-sm">
+              <img src="https://images.unsplash.com/photo-1590523278191-995cbcda646b?q=80&w=1074&auto=format&fit=crop" alt="Mombasa beach" class="w-100">
+              <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+                <h5 class="text-white mb-0">Mombasa</h5>
+                <small class="text-white-50">1,180 properties</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="location-card position-relative rounded-4 overflow-hidden shadow-sm">
+              <img src="https://images.unsplash.com/photo-1621193793262-4127d9855d9a?q=80&w=1170&auto=format&fit=crop" alt="Kisumu lake" class="w-100">
+              <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+                <h5 class="text-white mb-0">Kisumu</h5>
+                <small class="text-white-50">640 properties</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="location-card position-relative rounded-4 overflow-hidden shadow-sm">
+              <img src="https://images.unsplash.com/photo-1580060839134-75a5edca2e72?q=80&w=1171&auto=format&fit=crop" alt="Nakuru" class="w-100">
+              <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+                <h5 class="text-white mb-0">Nakuru</h5>
+                <small class="text-white-50">520 properties</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MEET THE AGENTS ===== -->
+    <section id="agents" class="py-5 bg-light">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Meet the Agents</h2>
+          <p class="text-muted">Trusted professionals ready to guide you</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-6 col-lg-3 text-center">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop" class="rounded-circle agent-img shadow mb-3" alt="Agent David Mwangi">
+            <h6 class="fw-semibold mb-0">David Mwangi</h6>
+            <p class="small text-muted">Luxury Specialist</p>
+            <div class="d-flex justify-content-center gap-2">
+              <a href="#" class="text-muted"><i class="bi bi-telephone"></i></a>
+              <a href="#" class="text-muted"><i class="bi bi-envelope"></i></a>
+              <a href="#" class="text-muted"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3 text-center">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop" class="rounded-circle agent-img shadow mb-3" alt="Agent Aisha Omar">
+            <h6 class="fw-semibold mb-0">Aisha Omar</h6>
+            <p class="small text-muted">Coastal Properties</p>
+            <div class="d-flex justify-content-center gap-2">
+              <a href="#" class="text-muted"><i class="bi bi-telephone"></i></a>
+              <a href="#" class="text-muted"><i class="bi bi-envelope"></i></a>
+              <a href="#" class="text-muted"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3 text-center">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop" class="rounded-circle agent-img shadow mb-3" alt="Agent Brian Otieno">
+            <h6 class="fw-semibold mb-0">Brian Otieno</h6>
+            <p class="small text-muted">Apartments Lead</p>
+            <div class="d-flex justify-content-center gap-2">
+              <a href="#" class="text-muted"><i class="bi bi-telephone"></i></a>
+              <a href="#" class="text-muted"><i class="bi bi-envelope"></i></a>
+              <a href="#" class="text-muted"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3 text-center">
+            <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=200&auto=format&fit=crop" class="rounded-circle agent-img shadow mb-3" alt="Agent Wanjiru Kamau">
+            <h6 class="fw-semibold mb-0">Wanjiru Kamau</h6>
+            <p class="small text-muted">Commercial & Land</p>
+            <div class="d-flex justify-content-center gap-2">
+              <a href="#" class="text-muted"><i class="bi bi-telephone"></i></a>
+              <a href="#" class="text-muted"><i class="bi bi-envelope"></i></a>
+              <a href="#" class="text-muted"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="py-5">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">What Our Clients Say</h2>
+        </div>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                  <div class="mb-3 text-warning">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p class="lead">“Nestora helped us find our Karen home in 3 weeks. Verified documents, honest pricing, and a great agent. Totally stress-free.”</p>
+                  <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=100&auto=format&fit=crop" class="testimonial-img rounded-circle my-3" alt="Client Jane">
+                  <h6 class="mb-0 fw-semibold">Jane Muthoni</h6>
+                  <small class="text-muted">Homeowner, Nairobi</small>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                  <div class="mb-3 text-warning">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p class="lead">“Rented my Nyali apartment through Nestora. Virtual tour was accurate, landlord verified. Best rental experience in Mombasa.”</p>
+                  <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=100&auto=format&fit=crop" class="testimonial-img rounded-circle my-3" alt="Client Kevin">
+                  <h6 class="mb-0 fw-semibold">Kevin Ochieng</h6>
+                  <small class="text-muted">Tenant, Mombasa</small>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                  <div class="mb-3 text-warning">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                  </div>
+                  <p class="lead">“Listed my Westlands townhouse and got 12 serious views in 5 days. Sold above asking. Their valuation was spot on.”</p>
+                  <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=100&auto=format&fit=crop" class="testimonial-img rounded-circle my-3" alt="Client Linda">
+                  <h6 class="mb-0 fw-semibold">Linda Wairimu</h6>
+                  <small class="text-muted">Seller, Westlands</small>
+                </div>
+              </div>
+            </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BLOG ===== -->
+    <section id="blog" class="py-5 bg-light">
+      <div class="container py-4">
+        <div class="d-flex justify-content-between align-items-end mb-4">
+          <div>
+            <h2 class="fw-bold mb-1">Latest Insights</h2>
+            <p class="text-muted mb-0">Kenya property news, guides, and investment tips</p>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <article class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+              <img src="https://images.unsplash.com/photo-1448630360428-65456885c650?q=80&w=1167&auto=format&fit=crop" class="w-100" alt="Nairobi market" style="height:200px;object-fit:cover;">
+              <div class="card-body p-4">
+                <div class="d-flex gap-2 small mb-2"><span class="badge bg-primary-subtle text-primary">Market</span><span class="text-muted">Nov 12, 2025</span></div>
+                <h6 class="fw-semibold">Nairobi Property Prices 2026: Where to Invest</h6>
+                <p class="small text-muted">Kilimani, Syokimau, and Ruaka lead growth. We break down yields and upcoming infrastructure.</p>
+                <a href="#" class="small fw-semibold">Read more <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+              <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1073&auto=format&fit=crop" class="w-100" alt="Home buying guide" style="height:200px;object-fit:cover;">
+              <div class="card-body p-4">
+                <div class="d-flex gap-2 small mb-2"><span class="badge bg-success-subtle text-success">Guide</span><span class="text-muted">Oct 28, 2025</span></div>
+                <h6 class="fw-semibold">First-Time Buyer Checklist in Kenya</h6>
+                <p class="small text-muted">From land searches to stamp duty, avoid common mistakes with our lawyer-approved checklist.</p>
+                <a href="#" class="small fw-semibold">Read more <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+              <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1170&auto=format&fit=crop" class="w-100" alt="Rental yields" style="height:200px;object-fit:cover;">
+              <div class="card-body p-4">
+                <div class="d-flex gap-2 small mb-2"><span class="badge bg-warning-subtle text-warning">Invest</span><span class="text-muted">Oct 5, 2025</span></div>
+                <h6 class="fw-semibold">Best Areas for Rental Yields in Mombasa</h6>
+                <p class="small text-muted">Nyali, Bamburi, and Shanzu compared for Airbnb and long-term rentals in 2025-2026.</p>
+                <a href="#" class="small fw-semibold">Read more <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== NEWSLETTER ===== -->
+    <section class="py-5">
+      <div class="container">
+        <div class="p-4 p-md-5 rounded-4 shadow-lg" style="background: linear-gradient(90deg, #0d6efd, #0a58ca);">
+          <div class="row align-items-center text-white">
+            <div class="col-lg-6 mb-3 mb-lg-0">
+              <h3 class="fw-bold mb-2">Get Property Updates</h3>
+              <p class="mb-0 text-white-50">New listings in Karen, Kilimani, Nyali and more — sent weekly to your inbox.</p>
+            </div>
+            <div class="col-lg-6">
+              <form class="d-flex gap-2">
+                <input type="email" class="form-control form-control-lg rounded-pill" placeholder="Enter your email" aria-label="Email" required>
+                <button class="btn btn-light rounded-pill px-4 fw-semibold text-primary" type="submit">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA BANNER ===== -->
+    <section class="py-5 bg-primary text-white text-center">
+      <div class="container py-3">
+        <h2 class="fw-bold mb-2">Ready to List Your Property?</h2>
+        <p class="mb-4 text-white-50">Get a free valuation and reach 50,000+ serious buyers monthly.</p>
+        <div class="d-flex gap-2 justify-content-center">
+          <a href="#" class="btn btn-light text-primary px-4">Get Valuation</a>
+          <a href="#" class="btn btn-outline-light px-4">Contact Agent</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="contact" class="pt-5 bg-dark text-white-50">
+    <div class="container pb-4">
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-white mb-3"><i class="bi bi-house-door-fill me-2 text-primary"></i>Nestora</h5>
+          <p class="small">Kenya's premium real estate platform. Verified listings, expert agents, and secure deals from Nairobi to the coast.</p>
+          <div class="d-flex gap-3 fs-5">
+            <a href="#" class="text-white-50"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white-50"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="text-white-50"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white-50"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h6 class="text-white mb-3">Quick Links</h6>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="#home" class="text-white-50">Home</a></li>
+            <li class="mb-2"><a href="#listings" class="text-white-50">Listings</a></li>
+            <li class="mb-2"><a href="#agents" class="text-white-50">Agents</a></li>
+            <li class="mb-2"><a href="#blog" class="text-white-50">Blog</a></li>
+            <li class="mb-2"><a href="#" class="text-white-50">About Us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h6 class="text-white mb-3">Property Types</h6>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="#" class="text-white-50">Apartments</a></li>
+            <li class="mb-2"><a href="#" class="text-white-50">Villas</a></li>
+            <li class="mb-2"><a href="#" class="text-white-50">Townhouses</a></li>
+            <li class="mb-2"><a href="#" class="text-white-50">Commercial</a></li>
+            <li class="mb-2"><a href="#" class="text-white-50">Land</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-5 col-md-6">
+          <h6 class="text-white mb-3">Contact</h6>
+          <p class="small mb-2"><i class="bi bi-geo-alt me-2 text-primary"></i>Westlands Square, 5th Floor, Nairobi, KE</p>
+          <p class="small mb-2"><i class="bi bi-telephone me-2 text-primary"></i>+254 700 123 456</p>
+          <p class="small mb-3"><i class="bi bi-envelope me-2 text-primary"></i>hello@nestora.co.ke</p>
+          <form class="d-flex gap-2">
+            <input type="email" class="form-control rounded-pill" placeholder="Newsletter email">
+            <button class="btn btn-primary rounded-pill px-3" type="submit"><i class="bi bi-send"></i></button>
+          </form>
+        </div>
+      </div>
+      <hr class="border-secondary my-4">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center small">
+        <p class="mb-2 mb-md-0">© 2026 Nestora Ltd. All rights reserved.</p>
+        <div class="d-flex gap-3">
+          <a href="#" class="text-white-50">Privacy</a>
+          <a href="#" class="text-white-50">Terms</a>
+          <a href="#" class="text-white-50">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+<script>(function(){document.addEventListener("click",function(e){var a=e.target.closest("[data-product-id]");if(!a)return;e.preventDefault();var pid=a.getAttribute("data-product-id");if(pid)parent.postMessage({type:"ecto-artifact-link-click",productId:pid},"*")})})();</script>
+</body>
+</html>
